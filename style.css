@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    height: 100vh;
+}
+
+.background-top {
+    height: 15%;
+    background-color: #009688;
+}
+
+.background-bottom  {
+    height: 85%;
+    background-color: #D8DBD5;
+}
+
+#wrapper-main   {
+
+    height: 90%;
+    width: 80%;
+    position: fixed;
+    top: 6%;
+    left: 10%;
+}
+
+#contact-window {
+    float: left;
+    width: 40%;
+    height: 100%;
+    background-color: pink
+}
+#talk-window {
+    float: left;
+    width: 60%;
+    height: 100%;
+    background-color: lightgreen;
+}
