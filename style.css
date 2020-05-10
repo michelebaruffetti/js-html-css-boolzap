@@ -40,7 +40,11 @@
     height: 100%;
     background-color: #FFFFFF;
     border-right: 1px solid #E4E5E6;
+    overflow-y: scroll;
 
+}
+
+.contact-list   {
 }
 
 .alert  {
