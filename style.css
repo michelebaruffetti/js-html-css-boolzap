@@ -69,6 +69,27 @@
     font-size: 14px;
 }
 
+.searchbar  {
+    background-color: #EDEDED;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.searchbar i    {
+    font-size: 12px;
+    padding: 10px 15px;
+    background-color: white;
+    border-right: 1px solid #EDEDED;
+}
+
+.searchbar input    {
+    font-size: 11px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+
 /* SEZIONE DESTRA - TALK WINDOW */
 
 #talk-window {
