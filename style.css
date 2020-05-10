@@ -87,6 +87,29 @@ i   {
     background-image: url('img/wallpaper.jpg');
     background-repeat: repeat;
     background-size: contain;
+    padding: 30px 40px 0 40px;
+    overflow-y: scroll;
+}
+
+.you    {
+    padding: 15px 30px 18px 10px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 8px;
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    position: relative;
+}
+.your-contact    {
+    padding: 15px 30px 18px 10px;
+    max-width: 80%;
+    background-color: #DCF8C6;
+    border-radius: 8px;
+    float: right;
+    clear: both;
+    margin-bottom: 10px;
+    position: relative;
 }
 
 img {
@@ -99,6 +122,7 @@ img {
 .text-message   {
     width: 80%;
     height: 70%;
+    font-size: 16px;
     padding: 10px 10px;
     border-radius: 5px;
     border-style: none;
@@ -106,4 +130,12 @@ img {
 
 .footer > i  {
     padding: 0 10px;
+}
+
+.ora    {
+    font-size: small;
+    color: grey;
+    position: absolute;
+    right: 7px;
+    bottom: 3px;
 }
