@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 
             // // inserisco il testo copiato dall'input (ma non riesco a inserirlo in un elemento del div copiato)
-            new_user_message.text(user_text);
+            new_user_message.find('p').text(user_text);
             // console.log(new_user_message);
 
             // appendo il nuovo messaggio
