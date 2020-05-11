@@ -205,6 +205,6 @@ img {
 
 /* SEZIONE TEMPLATE */
 
-#template   {
+.template, .template1  {
     display: none;
 }

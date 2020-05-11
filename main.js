@@ -27,6 +27,20 @@ $(document).ready(function() {
 
             // svuoto text-message (non funziona)
             $('.text-message').val(" ");
+
+
+            // autorisposta ad un tempo determinato
+
+            setTimeout(function() {
+                // clonare template 1 (risposta) e rimuovere la classe risposta
+                var new_answer_message = $('.template1').clone().removeClass('template1');
+                // prendere il 'p' dentro la copia di template e metterci una riposta.
+                new_answer_message.find('p').text('miao');
+
+                // appendo il messaggio al main-talk
+                $('.main-talk').append(new_answer_message);
+
+            }, 1000);
         };
     });
 
