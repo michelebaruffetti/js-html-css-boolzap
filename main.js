@@ -7,7 +7,8 @@ $(document).ready(function() {
     // intercetto il tasto invio
     $('.text-message').keypress(function()
     {
-        if (event.which == 13 ) {
+
+        if (event.which == 13 && $('.text-message').val() != 0) {
 
 
             // leggo il contenuto dell'input text-message e lo salvo in una variabile
