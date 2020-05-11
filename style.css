@@ -40,11 +40,13 @@
     height: 100%;
     background-color: #FFFFFF;
     border-right: 1px solid #E4E5E6;
-    overflow-y: scroll;
+
 
 }
 
 .contact-list   {
+    overflow-y: scroll;
+    height: calc(100% - 187px);
 }
 
 .alert  {
@@ -198,4 +200,11 @@ img {
     position: absolute;
     right: 7px;
     bottom: 3px;
+}
+
+
+/* SEZIONE TEMPLATE */
+
+#template   {
+    display: none;
 }
