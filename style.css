@@ -156,6 +156,7 @@ i   {
 .you    {
     padding: 15px 30px 18px 10px;
     max-width: 80%;
+    min-width: 70px;
     background-color: white;
     border-radius: 8px;
     float: left;
@@ -166,6 +167,7 @@ i   {
 .your-contact    {
     padding: 15px 30px 18px 10px;
     max-width: 80%;
+    min-width: 70px;
     background-color: #DCF8C6;
     border-radius: 8px;
     float: right;
@@ -195,7 +197,7 @@ img {
 }
 
 .ora    {
-    font-size: small;
+    font-size: 11px;
     color: grey;
     position: absolute;
     right: 7px;

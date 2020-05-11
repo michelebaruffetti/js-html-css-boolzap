@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    var orario = ora_messaggio;
+    $(document).find('.ora, .data').text(orario);
+
+
     // intercetto il tasto invio
     $('.text-message').keypress(function()
     {
@@ -20,6 +24,8 @@ $(document).ready(function() {
             // // inserisco il testo copiato dall'input nel 'p' all'interno del div template precedentemente clonato
             new_user_message.find('p').text(user_text);
 
+            var orario = ora_messaggio;
+            new_user_message.find('.ora').text(orario);
 
             // appendo il nuovo messaggio clonato, tolto della classe template e con la variabile copiata nel 'p'
 
@@ -37,15 +43,23 @@ $(document).ready(function() {
                 // prendere il 'p' dentro la copia di template e metterci una riposta.
                 new_answer_message.find('p').text('miao');
 
+                var orario = ora_messaggio;
+                new_answer_message.find('.ora').text(orario);
+
                 // appendo il messaggio al main-talk
                 $('.main-talk').append(new_answer_message);
 
-            }, 1000);
+            }, 3000);
         };
     });
 
 
+// FUNZIONE CHE CALCOLA L'orario
 
-
+    function ora_messaggio(){
+        var d = new Date();
+        var time = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+        return time;
+    };
 
 });
