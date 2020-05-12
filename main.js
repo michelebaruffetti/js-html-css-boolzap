@@ -4,6 +4,8 @@ $(document).ready(function() {
     $(document).find('.ora, .data').text(orario);
 
 
+// INSERIMENTO MESSAGGIO E RISPOSTA AUTOMATICA
+
     // intercetto il tasto invio
     $('.text-message').keypress(function()
     {
@@ -53,6 +55,29 @@ $(document).ready(function() {
             }, 3000);
         };
     });
+
+
+// RICERCA DEI CONTATTI
+
+    // intercettare attività di tastiera nell'input di searchbar
+    $('#search-input').keyup(function()
+    {
+
+    // inserire quel dato in una variabile
+    var search_item = $('#search-input').val().toLowerCase().trim();
+    console.log(search_item);
+
+        // confrontare il contenuto della variabile con ogni elemento "name" della contact list e nascondere tutti i div ".profile" che non hanno elementi comuni
+        $('.contact-list').each(function(){
+            var profile = $('.profile').find('.name p').text().toLowerCase();
+            console.log('nome contatto: ' + profile);
+
+            
+
+        });
+    // mostrare di nuovo tutti contatti quando l'input della searchbar è vuoto
+    }
+    );
 
 
 // FUNZIONE CHE CALCOLA L'orario
