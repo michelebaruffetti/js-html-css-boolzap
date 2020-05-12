@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 
             // copio l'elemento template in una variabile e tolgo la classe template
-            var new_user_message = $('.template').clone().removeClass('template');
+            var new_user_message = $('.template').clone().removeClass('template').addClass('you');
             console.log(new_user_message);
 
 
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
             setTimeout(function() {
                 // clonare template 1 (risposta) e rimuovere la classe risposta
-                var new_answer_message = $('.template1').clone().removeClass('template1');
+                var new_answer_message = $('.template').clone().removeClass('template').addClass('your-contact');
                 // prendere il 'p' dentro la copia di template e metterci una riposta.
                 new_answer_message.find('p').text('miao');
 
