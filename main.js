@@ -69,10 +69,14 @@ $(document).ready(function() {
 
         // confrontare il contenuto della variabile con ogni elemento "name" della contact list e nascondere tutti i div ".profile" che non hanno elementi comuni
         $('.contact-list').each(function(){
-            var profile = $('.profile').find('.name p').text().toLowerCase();
+            var profile = $(this).find('.name p').text().toLowerCase();
             console.log('nome contatto: ' + profile);
 
-            
+            if (profile.includes(search_item)) {
+                $(this).show();
+            }else {
+                $(this).hide();
+            }
 
         });
     // mostrare di nuovo tutti contatti quando l'input della searchbar è vuoto
