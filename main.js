@@ -67,19 +67,21 @@ $(document).ready(function() {
     var search_item = $('#search-input').val().toLowerCase().trim();
     console.log(search_item);
 
-        // confrontare il contenuto della variabile con ogni elemento "name" della contact list e nascondere tutti i div ".profile" che non hanno elementi comuni
-        $('.contact-list').each(function(){
+        // confrontare il contenuto della variabile con ogni elemento "p" contenuto dentro ".name" di ogni ".profile" e nascondo tutti i div ".profile" che non hanno elementi comuni con "search_item"
+
+        $('.contact-list .profile').each(function(){
             var profile = $(this).find('.name p').text().toLowerCase();
             console.log('nome contatto: ' + profile);
 
             if (profile.includes(search_item)) {
                 $(this).show();
+
             }else {
                 $(this).hide();
             }
 
         });
-    // mostrare di nuovo tutti contatti quando l'input della searchbar è vuoto
+
     }
     );
 
