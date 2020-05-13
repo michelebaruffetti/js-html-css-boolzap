@@ -50,7 +50,7 @@ $(document).ready(function() {
                 new_answer_message.find('.ora').text(orario);
 
                 // appendo il messaggio al main-talk
-                $('.main-talk').append(new_answer_message);
+                $('.chat.active').append(new_answer_message);
 
             }, 3000);
         };
@@ -105,9 +105,13 @@ $(document).ready(function() {
 
         // cambio immagine profilo nell'header di destra
 
-        var profile_header = $('.contact-list > .profile').eq(profile_index).clone();
+        var profile_header = $('.contact-list > .profile').eq(profile_index).clone().removeClass('contact');
 
         console.log(profile_header);
+
+        $('#talk-window .header .profile').remove();
+
+        $('#talk-window .header').prepend(profile_header);
     });
 
 
