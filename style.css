@@ -167,6 +167,7 @@ i   {
     clear: both;
     margin-bottom: 10px;
     position: relative;
+    cursor: pointer;
 }
 .you    {
     padding: 15px 30px 18px 10px;
@@ -178,6 +179,7 @@ i   {
     clear: both;
     margin-bottom: 10px;
     position: relative;
+    cursor: pointer;
 }
 
 img {
@@ -206,6 +208,17 @@ img {
     position: absolute;
     right: 7px;
     bottom: 3px;
+}
+
+.info-delete    {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    cursor: pointer;
+}
+
+.info-delete i  {
+    font-size: 15px;
 }
 
 .chat   {

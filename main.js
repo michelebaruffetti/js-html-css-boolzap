@@ -52,7 +52,7 @@ $(document).ready(function() {
                 // appendo il messaggio al main-talk
                 $('.chat.active').append(new_answer_message);
 
-            }, 3000);
+            }, 2000);
         };
     });
 
@@ -113,6 +113,8 @@ $(document).ready(function() {
 
         $('#talk-window .header').prepend(profile_header);
     });
+
+// POSSIBILITA' DI CANCELLARE IL MESSAGGIO
 
 
 
