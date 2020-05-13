@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 
             // // inserisco il testo copiato dall'input nel 'p' all'interno del div template precedentemente clonato
-            new_user_message.find('p').text(user_text);
+            new_user_message.find('.text').text(user_text);
 
             var orario = ora_messaggio;
             new_user_message.find('.ora').text(orario);
@@ -44,7 +44,7 @@ $(document).ready(function() {
                 // clonare template 1 (risposta) e rimuovere la classe risposta
                 var new_answer_message = $('.template').clone().removeClass('template').addClass('your-contact');
                 // prendere il 'p' dentro la copia di template e metterci una riposta.
-                new_answer_message.find('p').text('miao');
+                new_answer_message.find('.text').text('miao');
 
                 var orario = ora_messaggio;
                 new_answer_message.find('.ora').text(orario);
@@ -126,7 +126,7 @@ $(document).ready(function() {
         // });
 
         // COMPARSA MENU AL CLICK SUL messaggio
-        $('.message').on('click', function(){
+        $('.chat').on('click', '.message', function(){
             $(this).find('.info-delete').toggle();
             $(this).find('.info-delete-menu').toggle();
 
