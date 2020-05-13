@@ -92,6 +92,23 @@ $(document).ready(function() {
 
 // SCORRIMENTO TRA LE VARIE CHAT
 
+    $('.contact').click(function(){
+
+        // parte messaggi
+        $('.main-talk .chat').removeClass('active');
+
+        var profile_index = $(this).index();
+        console.log(profile_index);
+
+        $('.main-talk .chat').eq(profile_index).addClass('active');
+
+
+        // cambio immagine profilo nell'header di destra
+
+        var profile_header = $('.contact-list > .profile').eq(profile_index).clone();
+
+        console.log(profile_header);
+    });
 
 
 

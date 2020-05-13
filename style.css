@@ -101,6 +101,10 @@
     border-top: 1px solid #E4E5E6;
 
 }
+.contact:hover    {
+    background-color: #EDEDED;
+    cursor: pointer;
+}
 
 /* SEZIONE DESTRA - TALK WINDOW */
 
@@ -214,6 +218,6 @@ img {
 
 /* SEZIONE TEMPLATE */
 
-.template, .template1  {
+.template {
     display: none;
 }
