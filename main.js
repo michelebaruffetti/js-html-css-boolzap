@@ -133,8 +133,18 @@ $(document).ready(function() {
             $(this).find('.info-delete').toggle();
             $(this).find('.info-delete-menu').toggle();
 
+            }
+        );
 
+
+        // CANCELLAZIONE DEL MESSAGGIO TRAMITE MENU
+
+        $('.chat').on('click','.info-delete-menu' ,function(){
+            var prova = $(this).parent().remove();
+        console.log(prova);
         });
+
+
 
 
 // FUNZIONE CHE CALCOLA L'orario
