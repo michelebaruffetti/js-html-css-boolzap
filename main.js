@@ -127,14 +127,23 @@ $(document).ready(function() {
 
         // COMPARSA MENU AL CLICK SUL messaggio
         $('.chat').on('click', '.message', function(){
-            $('.chat').find('.info-delete').hide();
-            $('.chat').find('.info-delete-menu').hide();
 
-            $(this).find('.info-delete').toggle();
-            $(this).find('.info-delete-menu').toggle();
 
+            // $(this).find('.info-delete').toggle();
+            // $(this).find('.info-delete-menu').toggle();
+
+            if ($(this).find('.info-delete').hasClass('active')) {
+
+                $(this).find('.info-delete').removeClass('active');
+                $(this).find('.info-delete-menu').removeClass('active');
+
+            }else
+            {
+                $(this).find('.info-delete').addClass('active');
+                $(this).find('.info-delete-menu').addClass('active');
             }
-        );
+
+        });
 
 
         // CANCELLAZIONE DEL MESSAGGIO TRAMITE MENU

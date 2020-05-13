@@ -251,7 +251,7 @@ img {
     display: none;
 }
 
-.chat.active    {
+.active    {
     display: block;
 }
 
