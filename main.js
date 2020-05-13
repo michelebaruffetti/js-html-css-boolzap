@@ -117,14 +117,21 @@ $(document).ready(function() {
 // POSSIBILITA' DI CANCELLARE IL MESSAGGIO
 
     // COMPARSA/SCOMPARSA CHEVRONDONW ON MOUSEOVER MESSAGGIO DI TESTO
-        $('p .text').on('mouseenter', function(){
-            $(this).next().show();
-        });
-        $('p .text').mouseleave(function(){
-            $(this).next().hide();
-        });
+        // $('.main-talk .message').mouseenter( function(){
+        //     $(this).find('.info-delete').show();
+        //
+        // });
+        // $('.chat .text').mouseleave(function(){
+        //     $(this).next().hide();
+        // });
+
+        // COMPARSA MENU AL CLICK SUL messaggio
+        $('.message').on('click', function(){
+            $(this).find('.info-delete').toggle();
+            $(this).find('.info-delete-menu').toggle();
 
 
+        });
 
 
 // FUNZIONE CHE CALCOLA L'orario

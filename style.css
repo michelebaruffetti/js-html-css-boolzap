@@ -221,8 +221,23 @@ img {
     cursor: pointer;
     display: none;
 }
-.info-delete:hover    {
-    display: block;
+
+.info-delete-menu   {
+    background-color: white;
+    position: absolute;
+    top: 32px;
+    right: 2px;
+    padding: 5px;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+}
+
+.info-delete-menu p {
+    font-size: 11px;
+    color: grey;
+    padding: 5px;
 }
 
 .info-delete i  {
