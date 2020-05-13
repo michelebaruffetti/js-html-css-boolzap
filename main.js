@@ -116,6 +116,11 @@ $(document).ready(function() {
 
 // POSSIBILITA' DI CANCELLARE IL MESSAGGIO
 
+    // COMPARSA/SCOMPARSA CHEVRONDONW ON MOUSEOVER MESSAGGIO DI TESTO
+        $('.chat p').mouseenter(function(){
+            $(this).next().toggle();
+        });
+
 
 
 

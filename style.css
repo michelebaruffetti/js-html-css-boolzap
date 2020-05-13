@@ -215,10 +215,12 @@ img {
     right: 8px;
     top: 12px;
     cursor: pointer;
+    display: none;
 }
 
 .info-delete i  {
     font-size: 15px;
+
 }
 
 .chat   {
