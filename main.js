@@ -127,6 +127,9 @@ $(document).ready(function() {
 
         // COMPARSA MENU AL CLICK SUL messaggio
         $('.chat').on('click', '.message', function(){
+            $('.chat').find('.info-delete').hide();
+            $('.chat').find('.info-delete-menu').hide();
+
             $(this).find('.info-delete').toggle();
             $(this).find('.info-delete-menu').toggle();
 
