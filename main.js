@@ -129,8 +129,6 @@ $(document).ready(function() {
         $('.chat').on('click', '.message', function(){
 
 
-            // $(this).find('.info-delete').toggle();
-            // $(this).find('.info-delete-menu').toggle();
 
             if ($(this).find('.info-delete').hasClass('active')) {
 
@@ -139,6 +137,10 @@ $(document).ready(function() {
 
             }else
             {
+
+                $('.chat').find('.info-delete').removeClass('active');
+                $('.chat').find('.info-delete-menu').removeClass('active');
+                
                 $(this).find('.info-delete').addClass('active');
                 $(this).find('.info-delete-menu').addClass('active');
             }
