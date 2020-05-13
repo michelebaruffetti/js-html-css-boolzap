@@ -32,7 +32,7 @@ $(document).ready(function() {
 
             // appendo il nuovo messaggio clonato, tolto della classe template e con la variabile copiata nel 'p'
 
-            $('.main-talk').append(new_user_message);
+            $('.chat.active').append(new_user_message);
 
             // svuoto text-message (non funziona)
             $('.text-message').val(" ");
@@ -88,6 +88,12 @@ $(document).ready(function() {
 
 
     });
+
+
+// SCORRIMENTO TRA LE VARIE CHAT
+
+
+
 
 
 // FUNZIONE CHE CALCOLA L'orario
