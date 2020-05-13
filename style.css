@@ -204,6 +204,13 @@ img {
     bottom: 3px;
 }
 
+.chat   {
+    display: none;
+}
+
+.chat.active    {
+    display: block;
+}
 
 /* SEZIONE TEMPLATE */
 
