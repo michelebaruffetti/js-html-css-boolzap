@@ -69,6 +69,7 @@ $(document).ready(function() {
 
         // confrontare il contenuto della variabile con ogni elemento "p" contenuto dentro ".name" di ogni ".profile" e nascondo tutti i div ".profile" che non hanno elementi comuni con "search_item"
 
+    if (search_item != '') {
         $('.contact-list .profile').each(function(){
             var profile = $(this).find('.name p').text().toLowerCase();
             console.log('nome contatto: ' + profile);
@@ -81,9 +82,12 @@ $(document).ready(function() {
             }
 
         });
-
+    } else {
+        $('.contact-list .profile').show();
     }
-    );
+
+
+    });
 
 
 // FUNZIONE CHE CALCOLA L'orario
