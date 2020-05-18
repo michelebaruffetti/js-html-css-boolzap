@@ -17,25 +17,51 @@ $(document).ready(function() {
             var user_text = $('.text-message').val();
             console.log(user_text);
 
+                // UTILIZZO TEMPLATE HANDLEBARS PER MESSAGGIO
+                // recupero la struttura html del TEMPLATE
+                var template_html = $('#template-messaggio').html();
+                console.log(template_html);
+
+                // funzione di compilazione dell'template_html
+                var template_function = Handlebars.compile(template_html);
+
+                var orario = ora_messaggio;
+                var testo_utente = {
+                    'testo_utente': user_text,
+                    'ora_messaggio': orario
+                };
+
+                // preparazione html compilato
+                var final_html = template_function(testo_utente);
+                console.log(final_html);
+
+                // appendo il risultato e aggiungo una classe
+                $('.chat.active').append(final_html).removeClass('template');
 
 
-            // copio l'elemento template in una variabile e tolgo la classe template
-            var new_user_message = $('.template').clone().removeClass('template').addClass('you');
-            console.log(new_user_message);
 
 
-            // // inserisco il testo copiato dall'input nel 'p' all'interno del div template precedentemente clonato
-            new_user_message.find('.text').text(user_text);
 
-            var orario = ora_messaggio;
-            new_user_message.find('.ora').text(orario);
+
+
+
+            // // copio l'elemento template in una variabile e tolgo la classe template
+            // var new_user_message = $('.template').clone().removeClass('template').addClass('you');
+            // console.log(new_user_message);
+            //
+            //
+            // // // inserisco il testo copiato dall'input nel 'p' all'interno del div template precedentemente clonato
+            // new_user_message.find('.text').text(user_text);
+
+            // var orario = ora_messaggio;
+            // new_user_message.find('.ora').text(orario);
 
             // appendo il nuovo messaggio clonato, tolto della classe template e con la variabile copiata nel 'p'
 
-            $('.chat.active').append(new_user_message);
+            // $('.chat.active').append(new_user_message);
 
             // svuoto text-message (non funziona)
-            $('.text-message').val(" ");
+            // $('.text-message').val(" ");
 
 
             // autorisposta ad un tempo determinato
@@ -140,7 +166,7 @@ $(document).ready(function() {
 
                 $('.chat').find('.info-delete').removeClass('active');
                 $('.chat').find('.info-delete-menu').removeClass('active');
-                
+
                 $(this).find('.info-delete').addClass('active');
                 $(this).find('.info-delete-menu').addClass('active');
             }
@@ -154,6 +180,10 @@ $(document).ready(function() {
             var prova = $(this).parent().remove();
         console.log(prova);
         });
+
+
+
+
 
 
 
