@@ -184,6 +184,7 @@ i   {
 
 p.text   {
     padding: 15px 30px 18px 10px;
+    overflow-wrap: break-word;
 }
 
 img {
