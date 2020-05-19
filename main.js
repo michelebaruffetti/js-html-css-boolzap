@@ -36,8 +36,7 @@ $(document).ready(function() {
                 console.log(final_html);
 
                 // appendo il risultato e aggiungo una classe
-                $('.chat.active').append(final_html).removeClass('template');
-
+                $('.chat.active').append(final_html);
 
 
 
